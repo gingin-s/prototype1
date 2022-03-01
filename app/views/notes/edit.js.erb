@@ -1,0 +1,5 @@
+
+const passages = <%= @passages.to_json.html_safe %>
+console.log(passages)
+document.getElementById("passages").innerHTML = "<%= escape_javascript(render(partial: 'passages/passage', collection: @passages)) %>"
+reloadPassages(passages)

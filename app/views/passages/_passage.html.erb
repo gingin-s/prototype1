@@ -1,0 +1,9 @@
+<div class="passage"> 
+  <div class="passage-seek-time">
+    <%= link_to timecode(passage.seek_time), url="#", id:"deep-link-#{passage.id}", data: { seconds: passage.seek_time }, onclick: "seekPlayer(this.dataset.seconds)" %> 
+  </div>
+  <div class="passage-text", id="text">
+    <%= passage.text %>
+  </div>
+</div>
+

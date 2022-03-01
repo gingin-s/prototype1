@@ -1,0 +1,10 @@
+<div class="new-note-form">
+  <%= form_with model: @note, local: true do |f| %>
+  <div class="form">
+    <%= f.text_area :title, class:"note-title", id:"note-name", placeholder:"タイトル（必須 40文字まで)", maxlength:"40" %>
+    <%= f.text_area :description, class:"note-text", id:"note-info", placeholder:"noteの説明" ,rows:"7" ,maxlength:"1000" %>
+    <%= f.text_area :youtube_id, class:"note-movie", id:"note-movie", placeholder:"https://www.youtube.com/watch?v=○○○○○○○○○○○", maxlength:"43" %>
+    <%= f.submit "作成する" , class:"create-btn" %>
+  <% end %>
+  </div>
+</div>

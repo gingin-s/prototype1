@@ -1,0 +1,23 @@
+<div class="main-content">
+  <div class="player-container">
+    <div id="player"></div>
+  </div>
+  <div class="passage-container">
+    <div class="passages" id="passages">
+      <%= render partial: "passages/passage", collection: @passages %>
+    </div>
+  </div>
+</div>
+
+<div id="display-passage" class="display"></div>
+
+<div id = "passage-form-area">
+  <%= form_with model: [@note, @passage], id:"passage-form" do |f| %>
+    <a href="#" id="btn">時間の取得</a>
+    <%= f.text_field :seek_time, class:"seek_time", id:"seek_time" %>秒
+    <div class="passage-form">
+      <%= f.text_area :text, class:"passage-text", id:"passage-text", placeholder:"メモ内容" ,rows:"3" ,maxlength:"1000" %>
+    </div>
+      <%= f.submit "SEND", id:"send" %>
+  <% end %>
+</div>

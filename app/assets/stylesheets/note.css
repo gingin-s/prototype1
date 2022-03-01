@@ -1,0 +1,39 @@
+.main-content {
+  display: flex;
+  justify-content: start;
+}
+
+.passage-container {
+  width: 30vw;
+  border: 1px solid black;
+  margin-left: 20px;
+}
+
+.passages {
+  height: 100%
+}
+
+.passage {
+  display: flex;
+  justify-content: start;
+}
+
+.display {
+  height: 40px;
+  width: 500px;
+  border: 1px solid black;
+  margin-bottom: 20px;
+}
+
+.passage-seek-time {
+  width: 60px;
+  padding-right: 40px;
+}
+
+.passage-text {
+  width: 500px;
+}
+
+.form {
+  display: block;
+}
